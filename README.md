@@ -39,9 +39,11 @@ docker run --name mqtt-data \
 
 ## Build
 Quick
+
     make build
    
 Verbose
+
     git clone https://github.com/kmpm/docker-mosquitto.git
     cd docker-mosquitto
     docker build -t kmpm/mosquitto .
@@ -49,11 +51,13 @@ Verbose
 
 ## Run
 Quick
+
     make run
 
 Verbose
 
 Use volumes from previously created container.
+
     docker run -d -p 1883:1883 -p 9001:9001 --volumes-from mqtt-data kmpm/mosquitto
 Exposes Port 1883 (MQTT) 9001 (Websocket MQTT)
 
