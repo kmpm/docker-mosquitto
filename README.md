@@ -18,10 +18,12 @@ Quick
 Verbose...
 
 Create two directories on your host:
+
     sudo mkdir -p /srv/mqtt/var
     sudo mkdir -p /srv/mqtt/config
 
 copy files from local config folder
+
     sudo cp -R config /srv/mqtt/
 
 Change /srv/mqtt/config as needed for your particular needs.
